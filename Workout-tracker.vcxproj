@@ -127,10 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cardio.cpp" />
+    <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="Trainer.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Weight-lifting.cpp" />
     <ClCompile Include="Workout-tracker.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cardio.h" />
     <ClInclude Include="Exercise.h" />
+    <ClInclude Include="Trainer.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Weight-lifting.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
