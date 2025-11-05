@@ -3,3 +3,8 @@
 #include "Exercise.h"
 #include <iostream>	
 #include <string>
+
+class Weightlifting : public Exercise {
+
+
+};
