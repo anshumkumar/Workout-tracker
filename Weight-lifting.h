@@ -12,7 +12,13 @@ private:
 // These variables are kept private because they are relevant to weight lifting only.
 
 public:
-	
+	Weightlifting(); // Default constructor
+	Weightlifting(string w_n, int w_t, int w_kg, int s, int r); // Parameterized constructor
+	// w_kg is weight, s is sets, r is reps
+
+	void displayInfo() const override;
+
+	void displayInfo(bool detailed_info) const; // Overload 
 
 
 };
