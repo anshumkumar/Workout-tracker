@@ -36,6 +36,8 @@ int main() {
 		cout << "workout 1 and workout 3 are different workouts." << endl;
 	}
 
+	cout << "Total workouts created: " << Exercise::getWorkoutCount() << endl;
+
 
 
 
