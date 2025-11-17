@@ -17,12 +17,25 @@ int main() {
 
 	Weightlifting Weight_1("Bench Press", 20, 80, 4, 10);
 	Weight_1.displayInfo();
-	// Object 3 for weightlifting.
-
-
-
 	Weight_1.displayInfo(true);
 	// Overloading
+	// Object 3 for weightlifting.
+
+	Weightlifting Weight_2("Bench Press", 20, 80, 4, 10);
+	Weight_2.displayInfo();
+	Weight_2.displayInfo(true);
+
+
+
+
+
+	if (Weight_1 == Weight_2) {
+		cout << "workout 1 and workout 2 are the same workout." << endl;
+	}
+	else {
+		cout << "workout 1 and workout 3 are different workouts." << endl;
+	}
+
 
 
 

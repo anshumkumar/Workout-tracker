@@ -1,5 +1,6 @@
 #include "Weight-lifting.h"
 
+#include <string>
 #include <iostream>
 using namespace std;
 
@@ -27,4 +28,12 @@ void Weightlifting::displayInfo(bool detailed_info) const {
 	else {
 		displayInfo();
 	}
+}
+
+bool Weightlifting::operator==(const Weightlifting& other) const {
+	return (this->workout_name == other.workout_name &&
+		this->workout_time == other.workout_time &&
+		this->weight == other.weight &&
+		this->sets == other.sets &&
+		this->reps == other.reps);
 }

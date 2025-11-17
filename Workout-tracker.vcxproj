@@ -133,6 +133,7 @@
     <ClCompile Include="User.cpp" />
     <ClCompile Include="Weight-lifting.cpp" />
     <ClCompile Include="Workout-tracker.cpp" />
+    <ClCompile Include="Workout-Volume.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cardio.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="Trainer.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Weight-lifting.h" />
+    <ClInclude Include="Workout-Volume.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
