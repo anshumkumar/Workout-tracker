@@ -12,6 +12,7 @@ class Cardio : public Exercise {  //Cardio class inheriting from Exercise class.
 public:
 	Cardio(string w_n, int w_t);   //Constructor with parameters, defined in exercise.
 	void displayInfo() const override;  //Override displayInfo function. (Polymorphism)
+	// This virtual void function will override here. 
 
 
 

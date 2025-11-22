@@ -22,6 +22,7 @@ Exercise(string w_n, int w_t);  //Constructor with parameters
 
 
 virtual void displayInfo() const; // Virtual function to display workouts. 
+// Can be overridden in derived classes. Cardio and Weightlifting will override this function.
 // Definition of the function is in cpp file.
 virtual ~Exercise();   //De-constructor  
 

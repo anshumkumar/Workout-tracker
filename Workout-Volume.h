@@ -12,5 +12,5 @@ public:
 
 	}
 };
-
+// Private members weight, sets, reps are accessed here because WorkoutVolume is a friend class of Weightlifting.
 

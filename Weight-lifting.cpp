@@ -17,8 +17,12 @@ void Weightlifting::displayInfo() const {
 		<< ", Weight Lifted: " << weight << " kg"
 		<< ", Number of Sets: " << sets
 		<< ", Reps per Set: " << reps << endl;
-} // displayInfo function definition, overrides the one in Exercise class.
+} 
+// Equality operator overloading definition.
 
+
+
+// displayInfo function definition, overrides the one in Exercise class.
 void Weightlifting::displayInfo(bool detailed_info) const {
 	if (detailed_info) {
 		cout << "Detailed Weightlifting Info:" << endl;
@@ -29,6 +33,7 @@ void Weightlifting::displayInfo(bool detailed_info) const {
 		displayInfo();
 	}
 }
+// Overloaded displayInfo function definition.
 
 bool Weightlifting::operator==(const Weightlifting& other) const {
 	return (this->workout_name == other.workout_name &&
@@ -37,3 +42,10 @@ bool Weightlifting::operator==(const Weightlifting& other) const {
 		this->sets == other.sets &&
 		this->reps == other.reps);
 }
+
+bool Weightlifting::operator!() const {
+	return (weight == 0 || sets == 0 || reps == 0);
+}
+// Unary operator overloading defined here. 
+
+// Equality operator overload definition.
