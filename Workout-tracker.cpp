@@ -52,6 +52,7 @@ int main() {
 	}
 
 	cout << "Total workouts created: " << Exercise::getWorkoutCount() << endl;
+	// Displays total workouts created so far using static function.
 
 	// 2nd comparison test
 
@@ -81,6 +82,19 @@ int main() {
 	// Unary operator test ends here.
 
 	cout << "Total workouts created: " << Exercise::getWorkoutCount() << endl;
+
+	/*
+
+	// Pointers requirement.
+
+	Might create pointers to dynamically allocate memory for Cardio and Weightlifting objects later.
+
+	Exercise* cardioPtr = new Cardio("Swimming", 60); // Pointer to cardio. Creates new object.
+	Exercise* weightPtr = new Weightlifting("Triceps Extension", 15, 40, 3, 12); // Pointer to weightlifting. Creates new object.
+
+	// This dynamically creates new objects.
+
+	*/
 
 
 

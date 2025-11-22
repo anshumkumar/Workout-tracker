@@ -8,14 +8,13 @@ int Exercise::workout_count = 0; // counter set to 0 at the beginning.
 
 Exercise::Exercise() : workout_name("Default"), workout_time (0) {
 	workout_count++;
-}   
-// Linked with the default constructor. 
-// Default values added.
+}   // Increases workout count, static variable.
+
 
 Exercise::Exercise(string w_n, int w_t) : workout_name(w_n), workout_time(w_t) {
 	workout_count++;
 }
-// Parameter constructor definition
+// Parameter constructor definition, increases workout count.
 
 void Exercise::displayInfo() const {
 	cout << "Workout Name: " << workout_name << ", Workout Time: " << workout_time << " minutes" << endl;
@@ -27,6 +26,8 @@ void Exercise::displayInfo() const {
 
 int Exercise::getWorkoutCount() {
 	return workout_count;
+
+	// Workout count static function definition.
 }
 
 Exercise::~Exercise() {}
