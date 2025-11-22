@@ -1,5 +1,6 @@
 #include "Cardio.h"
 #include "Weight-lifting.h"
+#include "Workout-Volume.h"
 #include <iostream>
 
 using namespace std;
@@ -18,6 +19,8 @@ int main() {
 	Weightlifting Weight_1("Bench Press", 20, 80, 4, 10);
 	Weight_1.displayInfo();
 	Weight_1.displayInfo(true);
+	WorkoutVolume volumeCalculator;
+	volumeCalculator.calculateVolume(Weight_1);
 	// Overloading
 	// Object 3 for weightlifting.
 
