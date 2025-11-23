@@ -1,7 +1,9 @@
 #include "Cardio.h"
 #include "Weight-lifting.h"
 #include "Workout-Volume.h"
+#include "Equipment.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -82,6 +84,41 @@ int main() {
 	// Unary operator test ends here.
 
 	cout << "Total workouts created: " << Exercise::getWorkoutCount() << endl;
+
+	Equipment* treadmill = new Equipment("Treadmill", true);
+	Equipment* dumbbells = new Equipment("Dumbbells", false);
+	Equipment* PressMachine = new Equipment("Press Machine", true);
+	Equipment* rowingMachine = new Equipment("Rowing Machine", false);
+
+	vector<Equipment*> gymStorage;
+	gymStorage.push_back(treadmill);
+	gymStorage.push_back(dumbbells);
+	gymStorage.push_back(PressMachine);
+	gymStorage.push_back(rowingMachine);
+
+	for (Equipment* eqp : gymStorage) {
+		eqp->displayEquipmentInfo();
+	}
+
+	cout << "Pointer test" << dumbbells->getEqpName() << " is "
+		<< (dumbbells->check_available() ? "available." : "not available.") << endl;
+
+	for (Equipment* eqp : gymStorage) {
+		delete eqp; 
+
+	}
+
+	gymStorage.clear(); // Clear the vector after deleting objects.
+
+	// pointers requirement fulfilled by c
+
+	// added functionality for Equipment class here by creating objects and storing them in a vector
+	// and using pointers 
+
+
+
+
+	
 
 	/*
 
